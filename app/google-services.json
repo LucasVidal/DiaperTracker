@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "2002422426",
+    "firebase_url": "https://diapertracker-1.firebaseio.com",
+    "project_id": "diapertracker-1",
+    "storage_bucket": "diapertracker-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2002422426:android:fb87b4b082fb3a32",
+        "android_client_info": {
+          "package_name": "com.lukapps.diapertracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2002422426-8vfskrarclfburt0eff25l558gufaf3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lukapps.diapertracker",
+            "certificate_hash": "90749a164c1aff3d2e293f3b6bbb1665d3c51b41"
+          }
+        },
+        {
+          "client_id": "2002422426-lln6vso4sj824a1kt0f9n80c5ifg7j3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBunoJlWNyqubzfGoBPZNnufsHz_xy128Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2002422426-lln6vso4sj824a1kt0f9n80c5ifg7j3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
