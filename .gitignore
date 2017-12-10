@@ -58,3 +58,4 @@ freeline_project_description.json
 *.iml
 .DS_Store
 
+.idea/vcs.xml
