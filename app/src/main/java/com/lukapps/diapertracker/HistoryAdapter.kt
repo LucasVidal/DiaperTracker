@@ -7,7 +7,7 @@ import android.view.ViewGroup
  * Created by lvidal on 12/10/17.
  */
 
-class HistoryAdapter(private val history: List<HistoryItem>)
+class HistoryAdapter(private var history: List<HistoryItem>)
     : RecyclerView.Adapter<HistoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): HistoryViewHolder {
@@ -21,5 +21,17 @@ class HistoryAdapter(private val history: List<HistoryItem>)
 
     override fun getItemCount() = history.size
 
+    fun add(historyItem: HistoryItem) {
+        history += historyItem
+        notifyDataSetChanged()
+    }
+
+    fun remove(historyItem: HistoryItem) {
+        val item = history.find { it.date == historyItem.date }
+        item?.let {
+            history -= it
+            notifyDataSetChanged()
+        }
+    }
 }
 

@@ -11,12 +11,12 @@ class HistoryViewHolder(v: View?) : RecyclerView.ViewHolder(v) {
 
     fun bindHistoryItem(historyItem: HistoryItem) {
         this.historyItem = historyItem
-        if (view == null) {
-            return
+
+        view?.let {
+            it.userNameTxt.text = historyItem.userName
+            it.dateTxt.text =historyItem.date.toString()
         }
 
-        view!!.userNameTxt.text = historyItem.userName
-        view!!.dateTxt.text =historyItem.date.toString()
     }
 
 }
