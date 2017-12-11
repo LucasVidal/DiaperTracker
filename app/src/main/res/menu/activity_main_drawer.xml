@@ -7,11 +7,15 @@
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/ic_menu_share"
-            android:title="Share house" />
+            android:title="@string/share_house" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Settings" />
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black"
+            android:title="@string/logout" />
     </group>
 
 </menu>
