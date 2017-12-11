@@ -9,18 +9,18 @@ import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_tracker.*
 import java.util.*
 
 
-class MainActivity : AppCompatActivity() {
+class TrackerActivity : AppCompatActivity() {
 
     private lateinit var linearLayoutManager: LinearLayoutManager
     private lateinit var adapter: HistoryAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tracker)
 
         linearLayoutManager = LinearLayoutManager(this)
         historyRecyclerView.layoutManager = linearLayoutManager
@@ -36,9 +36,9 @@ class MainActivity : AppCompatActivity() {
             override fun onChildChanged(dataSnapshot: DataSnapshot?, previousChildName: String?) { }
             override fun onCancelled(databaseError: DatabaseError?) {
                 databaseError?.let {
-                    Toast.makeText(this@MainActivity, databaseError.message,
+                    Toast.makeText(this@TrackerActivity, databaseError.message,
                             Toast.LENGTH_SHORT).show()
-                    Log.e(MainActivity::class.java.simpleName,
+                    Log.e(TrackerActivity::class.java.simpleName,
                             databaseError.message, databaseError.toException())
                 }
             }
